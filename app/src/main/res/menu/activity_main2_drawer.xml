@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_article"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Artikel" />
+        <item
+            android:id="@+id/nav_pregnancy"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Kehamilan" />
+        <item
+            android:id="@+id/nav_baby"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Bayi" />
+        <item
+            android:id="@+id/nav_imunisasi"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Imunisasi" />
+        <item
+            android:id="@+id/nav_keluhan"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Keluhan" />
+        <item
+            android:id="@+id/nav_HtgKontraksi"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Hitung Kontraksi" />
+        <item
+            android:id="@+id/nav_htgKehamilan"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Kalkulator Kehamilan" />
+    </group>
+
+</menu>
