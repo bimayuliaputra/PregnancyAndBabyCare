@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "50363805763",
+    "firebase_url": "https://tugasakhir-337fe.firebaseio.com",
+    "project_id": "tugasakhir-337fe",
+    "storage_bucket": "tugasakhir-337fe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:50363805763:android:ae437b76c76b7cf1",
+        "android_client_info": {
+          "package_name": "com.example.bima.pregnancyandbabycare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "50363805763-meep5m5cr7rs478o85ac9s8ubk9rlaq1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmwd3h0IGcIg9Dl7rDWXKuSOdnZC0mkeA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

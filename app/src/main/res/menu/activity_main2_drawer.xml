@@ -4,31 +4,31 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_article"
-            android:icon="@drawable/ic_menu_camera"
+            android:icon="@drawable/ic_article1"
             android:title="Artikel" />
         <item
             android:id="@+id/nav_pregnancy"
-            android:icon="@drawable/ic_menu_gallery"
+            android:icon="@drawable/ic_preg"
             android:title="Kehamilan" />
         <item
             android:id="@+id/nav_baby"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@drawable/ic_baby"
             android:title="Bayi" />
         <item
             android:id="@+id/nav_imunisasi"
-            android:icon="@drawable/ic_menu_manage"
+            android:icon="@drawable/ic_syringe"
             android:title="Imunisasi" />
         <item
             android:id="@+id/nav_keluhan"
-            android:icon="@drawable/ic_menu_manage"
+            android:icon="@drawable/ic_keluhan"
             android:title="Keluhan" />
         <item
             android:id="@+id/nav_HtgKontraksi"
-            android:icon="@drawable/ic_menu_manage"
+            android:icon="@drawable/ic_stopwatch"
             android:title="Hitung Kontraksi" />
         <item
             android:id="@+id/nav_htgKehamilan"
-            android:icon="@drawable/ic_menu_manage"
+            android:icon="@drawable/ic_calculator"
             android:title="Kalkulator Kehamilan" />
     </group>
 

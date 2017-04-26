@@ -12,19 +12,19 @@ import android.widget.TextView;
  */
 
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
+
     private String[] mDataset;
 
 
-    public class MyViewHolder extends RecyclerView.ViewHolder{
+    public static class MyViewHolder extends RecyclerView.ViewHolder{
         public CardView mCardview;
         public TextView mTextView;
 
         public MyViewHolder(View view){
             super(view);
 
-            mCardview = (CardView) view.findViewById(R.id.cvArticle);
-            //mTextView = (TextView) view.findViewById(R.id.)
-
+            mCardview = (CardView) view.findViewById(R.id.card_view);
+            mTextView = (TextView) view.findViewById(R.id.tvTitle);
         }
     }
 
@@ -45,7 +45,5 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
     }
 
     @Override
-    public int getItemCount() {
-        return mDataset.length;
-    }
+    public int getItemCount() { return mDataset.length; }
 }
