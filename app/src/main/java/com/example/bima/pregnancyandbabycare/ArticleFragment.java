@@ -24,14 +24,17 @@ public class ArticleFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
         View rootView = inflater.inflate(R.layout.fragment_article,container, false);
-        RecyclerView rv = (RecyclerView) rootView.findViewById(R.id.rvArticle);
+        RecyclerView rv = (RecyclerView) rootView.findViewById(R.id.recycler_view);
         rv.setHasFixedSize(true);
-        MyAdapter adapter = new MyAdapter(new String[]{"Contoh satu"});
+
+        MyAdapter adapter = new MyAdapter(new String[]{"Artikel satu", "Artikel dua", "Artikel tiga", "Artikel empat", "Artikel lima"});
         rv.setAdapter(adapter);
 
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getActivity());
         rv.setLayoutManager(linearLayoutManager);
+
         return rootView;
     }
 

@@ -14,10 +14,6 @@ import android.view.MenuItem;
 
 public class Main2Activity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
-    public RecyclerView mRecyclerView;
-    public RecyclerView.LayoutManager mLayoutManager;
-    public RecyclerView.Adapter mAdapter;
-    public String[] mData;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,13 +33,8 @@ public class Main2Activity extends AppCompatActivity
 
         ArticleFragment articleFragment = new ArticleFragment();
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-        fragmentTransaction.replace(R.id.frame, articleFragment);
+        fragmentTransaction.replace(R.id.frame, articleFragment, "fragment1");
         fragmentTransaction.commit();
-//        mRecyclerView = (RecyclerView) findViewById(R.id.rvArticle);
-//        mLayoutManager = new LinearLayoutManager(this);
-//        mRecyclerView.setLayoutManager(mLayoutManager);
-//        mAdapter = new MyAdapter(mData);
-//        mRecyclerView.setAdapter(mAdapter);
     }
 
     @Override
@@ -86,28 +77,51 @@ public class Main2Activity extends AppCompatActivity
 
         if (id == R.id.nav_article) {
             ArticleFragment articleFragment = new ArticleFragment();
+            FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+            fragmentTransaction.replace(R.id.frame, articleFragment, "fragment1");
+            fragmentTransaction.commit();
+        } else if (id == R.id.nav_pregnancy) {
+            PregnancyFragment pregnancyFragment = new PregnancyFragment();
             //FragmentManager manager = getSupportFragmentManager();
             //manager.beginTransaction(articleFragment.).commit();
             FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-            fragmentTransaction.replace(R.id.frame, articleFragment);
+            fragmentTransaction.replace(R.id.frame, pregnancyFragment, "fragment2");
             fragmentTransaction.commit();
-        } else if (id == R.id.nav_pregnancy) {
-//            PregnancyFragment pregnancyFragment = new PregnancyFragment();
-//            //FragmentManager manager = getSupportFragmentManager();
-//            //manager.beginTransaction(articleFragment.).commit();
-//            FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-//            fragmentTransaction.replace(R.id.frame, pregnancyFragment);
-//            fragmentTransaction.commit();
         } else if (id == R.id.nav_baby) {
-
+            BabyFragment babyFragment = new BabyFragment();
+            //FragmentManager manager = getSupportFragmentManager();
+            //manager.beginTransaction(articleFragment.).commit();
+            FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+            fragmentTransaction.replace(R.id.frame, babyFragment, "fragment3");
+            fragmentTransaction.commit();
         } else if (id == R.id.nav_imunisasi) {
-
+            ImunisasiFragment imunisasiFragment = new ImunisasiFragment();
+            //FragmentManager manager = getSupportFragmentManager();
+            //manager.beginTransaction(articleFragment.).commit();
+            FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+            fragmentTransaction.replace(R.id.frame, imunisasiFragment, "fragment4");
+            fragmentTransaction.commit();
         }  else if (id == R.id.nav_keluhan) {
-
+            KeluhanFragment keluhanFragment = new KeluhanFragment();
+            //FragmentManager manager = getSupportFragmentManager();
+            //manager.beginTransaction(articleFragment.).commit();
+            FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+            fragmentTransaction.replace(R.id.frame, keluhanFragment, "fragment5");
+            fragmentTransaction.commit();
         }  else if (id == R.id.nav_HtgKontraksi) {
-
+            HtgKontraksiFragment htgKontraksiFragment = new HtgKontraksiFragment();
+            //FragmentManager manager = getSupportFragmentManager();
+            //manager.beginTransaction(articleFragment.).commit();
+            FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+            fragmentTransaction.replace(R.id.frame, htgKontraksiFragment, "fragment6");
+            fragmentTransaction.commit();
         }  else if (id == R.id.nav_htgKehamilan) {
-
+            HtgKehamilanFragment htgKehamilanFragment = new HtgKehamilanFragment();
+            //FragmentManager manager = getSupportFragmentManager();
+            //manager.beginTransaction(articleFragment.).commit();
+            FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+            fragmentTransaction.replace(R.id.frame, htgKehamilanFragment, "fragment2");
+            fragmentTransaction.commit();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
