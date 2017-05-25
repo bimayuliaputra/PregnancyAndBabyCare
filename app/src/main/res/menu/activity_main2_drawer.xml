@@ -15,10 +15,6 @@
             android:icon="@drawable/ic_baby"
             android:title="Bayi" />
         <item
-            android:id="@+id/nav_imunisasi"
-            android:icon="@drawable/ic_syringe"
-            android:title="Imunisasi" />
-        <item
             android:id="@+id/nav_keluhan"
             android:icon="@drawable/ic_keluhan"
             android:title="Keluhan" />

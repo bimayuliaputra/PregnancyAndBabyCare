@@ -7,6 +7,8 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.inputmethod.InputMethodManager;
+import android.widget.EditText;
 
 
 /**
@@ -25,7 +27,10 @@ public class HtgKehamilanFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_htg_kehamilan, container, false);
+        View view=inflater.inflate(R.layout.fragment_htg_kehamilan, container, false);
+        EditText editText = (EditText) view.findViewById(R.id.editText_Tgl_Hpht);
+        return view;
     }
+
 
 }

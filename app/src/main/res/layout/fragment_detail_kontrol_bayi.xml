@@ -1,0 +1,96 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bima.pregnancyandbabycare.DetailKontrolBayi">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Tanggal Kontrol"
+                    android:id="@+id/text_Tgl_Kontrol"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:id="@+id/editText_Tgl_Kontrol"
+                    android:layout_below="@+id/text_Tgl_Kontrol"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Keluhan"
+                    android:id="@+id/text_Keluhan"
+                    android:layout_below="@+id/editText_Tgl_Kontrol"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:id="@+id/editText_Keluhan"
+                    android:layout_below="@+id/text_Keluhan"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Vaksin"
+                    android:id="@+id/text_Vaksin"
+                    android:layout_below="@+id/editText_Keluhan"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:id="@+id/editText_Vaksin"
+                    android:layout_below="@+id/text_Vaksin"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Tanggal Vaksin"
+                    android:id="@+id/text_Tgl_Vaksin"
+                    android:layout_below="@+id/editText_Vaksin"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:id="@+id/editText_Tgl_Vaksin"
+                    android:layout_below="@+id/text_Tgl_Vaksin"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Keterangan"
+                    android:id="@+id/text_Keterangan"
+                    android:layout_below="@+id/editText_Tgl_Vaksin"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:id="@+id/editText_Keterangan"
+                    android:layout_below="@+id/text_Keterangan"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Tanggal Kembali"
+                    android:id="@+id/text_Tgl_Kembali"
+                    android:layout_below="@+id/editText_Keterangan"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:layout_below="@+id/text_Tgl_Kembali"
+                    android:id="@+id/editText_Tgl_Kembali"/>
+
+            </RelativeLayout>
+        </android.support.v7.widget.LinearLayoutCompat>
+    </ScrollView>
+</FrameLayout>

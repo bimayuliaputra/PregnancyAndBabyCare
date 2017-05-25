@@ -20,25 +20,22 @@
             android:layout_height="match_parent">
 
             <ImageView
+                android:paddingTop="5dp"
+                android:paddingLeft="5dp"
+                android:paddingBottom="5dp"
+                android:paddingRight="5dp"
                 android:id="@+id/imgArticle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@mipmap/ic_launcher_round"/>
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
             <TextView
-                android:id="@+id/tvTitle"
+                android:id="@+id/editText_Judul"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:paddingTop="10dp"
                 android:layout_toRightOf="@+id/imgArticle"
+                android:paddingLeft="15dp"
                 android:textStyle="bold"
-                android:text="Judul"/>
-            <TextView
-                android:id="@+id/txtRingkasan"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/tvTitle"
-                android:layout_toRightOf="@+id/imgArticle"
-                android:layout_toEndOf="@+id/imgArticle"
-                android:text="Ringkasan"/>
+                android:textSize="20dp" />
         </RelativeLayout>
     </android.support.v7.widget.CardView>
 </LinearLayout>

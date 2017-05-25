@@ -5,9 +5,38 @@
     tools:context="com.example.bima.pregnancyandbabycare.HtgKehamilanFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <android.support.v7.widget.LinearLayoutCompat
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Menu Hitung Hehamilan" />
-
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Menu Hitung Hehamilan"
+            android:id="@+id/text_judul"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText_Tgl_Hpht"
+            android:hint="Tanggal HPHT"
+            android:inputType="text"
+            android:onClick="txtOnklik"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:layout_below="@+id/text_judul"/>
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/button_proses"
+            android:onClick="btnOnklik"
+            android:layout_below="@+id/editText_Tgl_Hpht"
+            android:text="Proses"/>
+        </RelativeLayout>
+    </android.support.v7.widget.LinearLayoutCompat>
 </FrameLayout>

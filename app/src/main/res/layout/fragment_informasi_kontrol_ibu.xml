@@ -1,0 +1,194 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bima.pregnancyandbabycare.InformasiKontrolIbu">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text_Tgl_Kontrol"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Tanggal Kontrol" />
+
+                <EditText
+                    android:id="@+id/editText_Tgl_Kontrol"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_Tgl_Kontrol"
+                    android:enabled="false" />
+
+                <TextView
+                    android:id="@+id/text_Keluhan"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/editText_Tgl_Kontrol"
+                    android:text="Keluhan" />
+
+                <EditText
+                    android:id="@+id/editText_Keluhan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_Keluhan"
+                    android:enabled="false" />
+
+                <TextView
+                    android:id="@+id/text_Tekanan_Darah"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/editText_Keluhan"
+                    android:text="Tekanan Darah" />
+
+                <EditText
+                    android:id="@+id/editText_Tekanan_Darah"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_Tekanan_Darah"
+                    android:enabled="false" />
+
+                <TextView
+                    android:id="@+id/text_Berat_Badan"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/editText_Tekanan_Darah"
+                    android:text="Berat Badan" />
+
+                <EditText
+                    android:id="@+id/editText_Berat_Badan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_Berat_Badan"
+                    android:enabled="false" />
+
+                <TextView
+                    android:id="@+id/text_Umur_Kehamilan"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/editText_Berat_Badan"
+                    android:text="Umur Kehamilan" />
+
+                <EditText
+                    android:id="@+id/editText_Umur_Kehamilan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_Umur_Kehamilan"
+                    android:enabled="false" />
+
+                <TextView
+                    android:id="@+id/text_Tinggi_Fundus"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/editText_Umur_Kehamilan"
+                    android:text="Tinggi Fundus" />
+
+                <EditText
+                    android:id="@+id/editText_Tinggi_Fundus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_Tinggi_Fundus"
+                    android:enabled="false" />
+
+                <TextView
+                    android:id="@+id/text_Letak_Janin"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/editText_Tinggi_Fundus"
+                    android:text="Letak Janin" />
+
+                <EditText
+                    android:id="@+id/editText_Letak_Janin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_Letak_Janin"
+                    android:enabled="false" />
+
+                <TextView
+                    android:id="@+id/text_Denyut_Jantung_Janin"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/editText_Letak_Janin"
+                    android:text="Denyut Jantung Janin" />
+
+                <EditText
+                    android:id="@+id/editText_Denyut_Jantung_Janin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/text_Denyut_Jantung_Janin"
+                    android:layout_marginTop="12dp"
+                    android:enabled="false" />
+
+                <TextView
+                    android:id="@+id/text_Tindakan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/editText_Denyut_Jantung_Janin"
+                    android:text="Tindakan" />
+
+                <EditText
+                    android:id="@+id/editText_Tindakan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_Tindakan"
+                    android:enabled="false" />
+
+                <TextView
+                    android:id="@+id/text_Nasehat"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/editText_Tindakan"
+                    android:text="Nasehat" />
+
+                <EditText
+                    android:id="@+id/editText_Nasehat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_Nasehat"
+                    android:enabled="false" />
+
+                <TextView
+                    android:id="@+id/text_Tgl_Htp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/editText_Nasehat"
+                    android:text="Tanggal Kelahiran" />
+
+                <EditText
+                    android:id="@+id/editText_Tgl_Htp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_Tgl_Htp"
+                    android:enabled="false" />
+
+                <TextView
+                    android:id="@+id/text_Tgl_Kembali"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/editText_Tgl_Htp"
+                    android:text="Tanggal Kembali Kontrol" />
+
+                <EditText
+                    android:id="@+id/editText_Tgl_Kembali"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_Tgl_Kembali"
+                    android:enabled="false" />
+            </RelativeLayout>
+        </android.support.v7.widget.LinearLayoutCompat>
+    </ScrollView>
+
+</FrameLayout>

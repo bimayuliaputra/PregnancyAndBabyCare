@@ -4,10 +4,84 @@
     android:layout_height="match_parent"
     tools:context="com.example.bima.pregnancyandbabycare.KeluhanFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Menu Keluhan" />
+        android:layout_height="match_parent">
 
+    <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="16dp">
+
+                <TextView
+                    android:id="@+id/text_view_panah_kanan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/panah_kanan_chat"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="2dp"
+                    android:textColor="@android:color/white"
+                    android:textColorLink="?android:attr/textColorHighlight"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/text_view_pesan_item_sisi_kanan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_toLeftOf="@+id/text_view_panah_kanan"
+                    android:layout_toStartOf="@+id/text_view_panah_kanan"
+                    android:background="@drawable/background_kanan_chat"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:text="Hello"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text_view_panah_kiri"
+                    android:background="@drawable/panah_kiri_chat"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:paddingTop="2dp"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:textSize="16sp"
+                    android:layout_marginTop="3dp"
+                    />
+
+                <TextView
+                    android:id="@+id/text_view_pesan_item_sisi_kiri"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_toEndOf="@+id/text_view_panah_kiri"
+                    android:layout_toRightOf="@+id/text_view_panah_kiri"
+                    android:background="@drawable/background_kiri_chat"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:text="Hello juga"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.LinearLayoutCompat>
+    </ScrollView>
 </FrameLayout>

@@ -1,3 +1,4 @@
+/*
 package com.example.bima.pregnancyandbabycare;
 
 import android.support.v7.widget.CardView;
@@ -7,9 +8,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+*/
 /**
  * Created by FA on 3/26/2017.
- */
+ *//*
+
 
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
@@ -24,7 +27,9 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
             super(view);
 
             mCardview = (CardView) view.findViewById(R.id.card_view);
-            mTextView = (TextView) view.findViewById(R.id.tvTitle);
+            */
+/*mTextView = (TextView) view.findViewById(R.id.tvTitle);*//*
+
         }
     }
 
@@ -47,3 +52,4 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
     @Override
     public int getItemCount() { return mDataset.length; }
 }
+*/
